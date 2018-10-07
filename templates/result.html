@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Result</title>
+     <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+    Result of {{ name }},
+    <br/>
+    <table border="2px">
+        <thead>
+        <tr>
+            <td>Subject</td>
+            <td>Marks</td>
+        </tr></thead>
+         {% for r in result %}
+            <tr>
+                <td>{{ r.1 }}</td>
+                <td>{{ r.2 }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

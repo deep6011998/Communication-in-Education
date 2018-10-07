@@ -1,0 +1,114 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+header
+{
+	height: 100;
+}
+body
+{
+background-image: url("../images/img.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+	position: center;
+}
+.main
+{
+position: absolute;
+top:50%;
+left: 50%;
+transform :translate(-50%,-50%);
+width: 400px;
+padding: 40px;
+background: rgba(0,0,0,0);
+box-sizing:border-box;
+box-shadow: 0 15px 25px rgba(0,0,0,5);
+border-radius: 10px;
+}
+.main h2
+{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+
+}
+.main .input 
+{
+	position: relative;
+}
+.main .input input
+{
+	width:100%;
+	padding: 10px 0;
+	font-size: 20px;
+	
+	color: black;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+
+}
+.main .input label
+{
+	
+	
+	padding :10px 0;
+	font-size: 18px;
+	color: black;
+	
+	
+
+}
+
+.main input {type="submit"}
+{
+	background: transparent;
+	border:none;
+	outline: none;
+	color: black;
+	background: #03a9f4;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+
+}
+
+#row ul
+{
+	list-style: none;
+	
+	
+}
+#row ul li
+{
+	
+
+	background-color: black;
+	width:500px;
+	height:50px;
+	border:1px solid white;
+	line-height: 50px;
+	text-align: center;
+	float :right;
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+ 	padding: 5px 20px;
+ 	
+ 	font-family: "Roboto",sans-serif;
+}
+#row ul ul
+{
+	display:none;
+}
+#row ul li:hover 
+{
+	background-color:red;
+}
+#row ul li:hover>ul
+{
+	display: block;
+}

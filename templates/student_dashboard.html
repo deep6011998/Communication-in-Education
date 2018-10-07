@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head><link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" /></head>
+<body>
+
+    <form action="\Student\result">
+        <input type="hidden" value="{{ name }}" name="student_name">
+        <input type="submit" value="RESULT"></input>
+    </form>
+
+    <form action="\Student\discussion_form">
+        <input type="hidden" value="{{ name }}" name="student_name">
+        <input type="submit" value="discussion_form"></input>
+    </form>
+
+</body>
+
+</html>

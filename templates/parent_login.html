@@ -1,0 +1,29 @@
+{% load static %}
+<html>
+<head>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<title></title>
+</head>
+<body>
+	<center>
+	<div class="main">
+		<h2>Parent Login</h2>
+		<form action="\Home\parent_login">
+			<div class="input">
+			<label>Parent_contact</label>
+
+			<input type="text" name="Parent_contact" >
+			</div>
+			
+			<div class="input">
+				<label>password</label>
+			<input type="password" name="password" >
+			</div>
+			<div class="input">
+			<input type="submit" name="" value="Login">
+			</div>
+		</form>
+	</div>
+</center>
+</body>
+</html>

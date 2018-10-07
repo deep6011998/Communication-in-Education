@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <meta charset="UTF-8">
+    <title>Question_Answer_Get_Output</title>
+</head>
+<body><center>
+    <div class="main">
+        <h2>Question_Answer_Get_Output</h2>
+    {{ for x in fin:
+        print(x)
+    }}
+    </div>
+    </center>
+</body>
+</html>

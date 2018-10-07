@@ -1,0 +1,35 @@
+{% load static %}
+<html>
+<head>
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<title></title>
+</head>
+<body>
+	<center>
+	<div class="main">
+		<h2>Teacher Registration</h2>
+		<form action="\Home\teacher_register">
+			<div class="input">
+			<label>Teacher_id</label>
+			<input type="text" name="Teacher_id" >
+		</div>
+			<div class="input">
+			<label>Name</label>
+			<input type="text" name="Name">
+			</div>
+			<div class="input">
+			<label>Subject</label>
+			<input type="text" name="Subject" >
+			</div>
+			<div class="input">
+			<label>password</label>
+			<input type="password" name="password" >
+			</div>
+			<div class="input">
+			<input type="submit" name="" value="Register">
+			</div>
+		</form>
+	</div>
+</center>
+</body>
+</html>

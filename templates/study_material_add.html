@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Addition of material</title>
+</head>
+<body>
+    <div style="border:2px black solid">
+        <form action="/Teacher/study_material_input">
+            <input type="hidden" name="teacher_id" value="{{ teacher_id }}">
+            Subjet: <input type='text' name="subject"/><br/>
+            Topic: <input type="text" name="topic"/><br/>
+            Date: <input type="date" name="date"/><br/>
+            Link: <input type="text" name="link"/><br/>
+            <input type=submit>
+        </form>
+    </div>
+</body>
+</html>

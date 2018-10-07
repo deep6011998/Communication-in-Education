@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Discussion Form</title>
+     <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+    <form action="\Student\search_discussion_form">
+        <p>To search for particular question, enter particular words to search: <input type="text" name="query_box">
+            <input type="submit"/></p>
+    </form>
+    <br/><br/><br/>
+    <div  style="border: 2px solid black; width:70%; max-height: 60%;">
+    <table style="margin: 7px">
+    <tr><th>Subject</th><th>Question</th><th>Answer</th></tr>
+        {% for r in result %}
+            <tr style="border: 2px solid black; background-color: khaki;">
+                <td style="padding: 2px 8px 2px 8px;">{{ r.0 }}</td>
+                <td>{{ r.1 }}</td>
+                <td>{{ r.2 }}</td>
+            </tr>
+
+        {% endfor %}
+    </table>
+    </div>
+    <br/><br/><br/>
+    <form action="\Student\post_discussion_form">
+
+        <p>To post your question, enter your question and the subject of query:<br/><br/>
+            <input type="text" name="subject" placeholder="subject">
+            <br/><br/>
+            <input type="text" name="post_query" placeholder="query"> </p>
+            <br/>
+            <input type="submit">
+    </form>
+
+</body>
+</html>

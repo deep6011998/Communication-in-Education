@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Title</title>
+     <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+    <div  style="border: 2px solid black; width:70%; max-height: 60%;">
+    <table style="margin: 7px">
+    <tr><th>Subject</th><th>Question</th><th>Answer</th></tr>
+        {% for r in list %}
+            <tr style="border: 2px solid black; background-color: khaki;">
+                <td style="padding: 2px 8px 2px 8px;">{{ r.0 }}</td>
+                <td>{{ r.1 }}</td>
+                <td>{{ r.2 }}</td>
+            </tr>
+
+        {% endfor %}
+    </table>
+    </div>
+</body>
+</html>

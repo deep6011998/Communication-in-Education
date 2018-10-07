@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Question </title>
+     <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+    <div style="border:2px solid black; width:80%;">
+        <h2>Question: </h2><h3>{{ question }}</h3>
+        {% for a in answer %}
+        Ans: {{ a }}<br/><br/>
+        {% endfor %}
+    </div>
+    <form onsubmit="answer_posted" method="POST">Write your answer:<input type="hidden" value="{{ id }}" name="id">
+        <textarea rows="2" cols="50" name="answer"></textarea><br/><br/>
+        <input type="submit"  value="Submit"/></form>
+</body>
+</html>
